@@ -21,7 +21,7 @@ public class UserController {
     }
     @GetMapping("")
     public String returnUser (Model model) {
-        model.addAttribute("user",userService.getUser(/*Integer.parseInt(count)*/));
+        model.addAttribute("user",userService.getUser());
         return "user";
     }
 //    @GetMapping("/{id}")
